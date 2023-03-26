@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Count</title>
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 3rem;" >Word Count !</h1>
+
+    <div class="container">
+        <form action="{% url 'result' %}" method="GET">
+            <textarea name="text" cols="100" rows="30"></textarea>
+            <div style="margin-top: 3rem;" class="button">
+                <button style="font-size: 1rem;" type="submit">전송하기</button>
+            </div>
+        </form>
+    </div>
+</body>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button {
+        text-align: center;
+    }
+</style>
+</html>
